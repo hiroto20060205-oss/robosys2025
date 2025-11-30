@@ -1,8 +1,9 @@
 # ロボットシステム学課題1_素因数分解コマンド
 
-## 概要
-入力した数値を素数に分解するコマンドです。
 ![test](https://github.com/hiroto20060205-oss/robosys2025/actions/workflows/test.yml/badge.svg)
+
+## 概要
+**入力した数値を素数に分解するコマンドです。**
 
 ## 使用方法
 
