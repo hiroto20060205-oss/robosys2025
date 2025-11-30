@@ -1,6 +1,6 @@
 #!/bin/bash -xv
 # SPDX-FileCopyrightText: 2025 Fujitake Hiroto
-# SPDX-Licence-Identifier: MIT
+# SPDX-License-Identifier: MIT
 
 ng () {
 	echo ${1}行目が違うよ
