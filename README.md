@@ -15,7 +15,9 @@ cd robosys2025
 
 ### 実行コマンド
 
-- **このコマンドで実行** `./prime factorization.py`
+```bash
+./prime_ factorization.py
+```
 
 ## 動作環境
 - Ubuntu 24.04.3 LTS
