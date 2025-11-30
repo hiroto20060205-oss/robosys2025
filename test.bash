@@ -27,5 +27,9 @@ out=$(echo 1 | ./prime_factorization.py) #2で割り切れない数字を入力�
 [ "$?" = 0 ]        || ng "$LINENO"
 [ "${out}" = "[]" ] || ng "$LINENO"
 
+out=$(echo -6  | ./prime_factorization.py) #負の値を入力したら[]を出すか
+[ "$?" = 0 ]        || ng "$LINENO"
+[ "${out}" = "[]" ] || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo ok
 exit $res
