@@ -10,7 +10,7 @@ ng () {
 res=0
 
 ### NORMAL INPUT ###
-out=$(seq 6 | ./prime_factorization.py) #素数に分解されるか確認
+out=$(echo 6 | ./prime_factorization.py) #素数に分解されるか確認
 [ "${out}" = "[2, 3]" ] || ng "$LINENO"
 
 
