@@ -17,7 +17,7 @@ cd robosys2025
 ### 実行コマンド
 
 ```bash
-./prime_ factorization.py
+./prime_factorization.py
 ```
 
 ### エラーが出た場合 
