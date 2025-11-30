@@ -22,5 +22,10 @@ out=$(echo | ./prime_factorization.py) #空文字を入力したらエラーを�
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
+### It's not an error, but it's not normal ###
+out=$(echo 1 | ./prime_factorization.py) #2で割り切れない数字を入力したら[]を出すか
+[ "$?" = 0 ]        || ng "$LINENO"
+[ "${out}" = "[]" ] || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo ok
 exit $res
