@@ -43,4 +43,4 @@ cd robosys2025
 ## ライセンス
 - © 2025 Hiroto Fujitake
 - このパッケージはMIT licenseに基づいて公開されています.
-- ライセンスの前文は[LICENSE](./LICENSE)から確認できます.
+- ライセンスの全文は[LICENSE](./LICENSE)から確認できます.
