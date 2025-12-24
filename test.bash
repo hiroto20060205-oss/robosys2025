@@ -27,5 +27,9 @@ out=$(echo 0 | ./convert_frequency_period)
 out=$(echo -1000 | ./convert_frequency_period)
 [ "${out}" = "1 ms" ] || ng "$LINENO"
 
+#文字列を入れた場合
+out=$(echo あ | ./convert_frequency_period)
+[ "${out}" = "" ] || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo ok
 exit $res
