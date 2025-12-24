@@ -32,7 +32,7 @@ out=$(echo あ | ./convert_frequency_period)
 [ "${out}" = "" ] || ng "$LINENO"
 
 #複数の入力に対応
-out=$(echo 0.001 1000 | ./convert_frequency_period)
+out=$(echo 0.001 1000 | ./convert_frequency_period | xargs)
 [ "${out}" = "1 kHz 1 ms" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo ok
