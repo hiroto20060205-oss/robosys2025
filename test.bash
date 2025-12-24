@@ -9,7 +9,11 @@ ng () {
 
 res=0
 
+#正常な入力
 
+# 1 / 50 = 0.02s = 20ms
+out=$(echo 50 | ./convert_frequency_period) #周波数を周期に変換
+[ "${out}" = "20 ms" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo ok
 exit $res
