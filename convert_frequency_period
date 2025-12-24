@@ -7,7 +7,7 @@ import sys
 def convert_frequency_period(value):
     # 0の場合は無限大として処理
     if value == 0:
-        return "Infinite"
+        return "Infinity"
     
     # 逆数を計算 （f = 1/T または T = 1/f）
     result = 1.0 / value
