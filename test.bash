@@ -19,5 +19,9 @@ out=$(echo 1000 | ./convert_frequency_period) #周波数を周期に変換
 out=$(echo 0.001 | ./convert_frequency_period) #周期を周波数に変換
 [ "${out}" = "1 kHz" ] || ng "$LINENO"
 
+# 無限大の処理
+out=$(echo 0 | ./convert_frequency_period) 
+[ "${out}" = "Infinite" ] || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo ok
 exit $res
