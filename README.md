@@ -11,7 +11,6 @@
 
 ```bash
 git clone https://github.com/hiroto20060205-oss/robosys2025.git
-cd robosys2025
 ```
 
 ### 実行コマンド
