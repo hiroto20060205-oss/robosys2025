@@ -11,7 +11,6 @@
 
 ```bash
 git clone https://github.com/hiroto20060205-oss/robosys2025.git
-cd robosys2025
 ```
 
 ### 実行コマンド
@@ -43,4 +42,4 @@ cd robosys2025
 ## ライセンス
 - © 2025 Hiroto Fujitake
 - このパッケージはMIT licenseに基づいて公開されています.
-- ライセンスの前文は[LICENSE](./LICENSE)から確認できます.
+- ライセンスの全文は[LICENSE](./LICENSE)から確認できます.

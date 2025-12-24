@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2025 Hiroto Fujitake
+# SPDX-License-Identifier: MIT
+
+import sys
+
+def convert_frequency_period(value):
+    # 0の場合は無限大として処理
+    if value == 0:
+        return "Infinite"
+    
+    # 逆数を計算 （f = 1/T または T = 1/f）
+    result = 1.0 / value
+    
+    # 入力値の大きさを見て、周波数か時間かを判断し、適切な単位をつける
+    
+    # ケース1: 入力が 1以上 （周波数 Hz とみなして、時間 s を返す）
+    if value >= 1:
+        if result >= 1.0:
+            return f"{result:.4g} s"
+        elif result >= 1e-3:
+            return f"{result * 1000:.4g} ms"
+        elif result >= 1e-6:
+            return f"{result * 1000000:.4g} us"
+        else:
+            return f"{result * 1000000000:.4g} ns"
+            
+    # ケース2: 入力が 1未満 （時間 s とみなして、周波数 Hz を返す）
+    else:
+        if result >= 1e6:
+            return f"{result / 1000000:.4g} MHz"
+        elif result >= 1e3:
+            return f"{result / 1000:.4g} kHz"
+        else:
+            return f"{result:.4g} Hz"
+
+def process_line(line):
+    try:
+        parts = line.split()
+        for part in parts:
+            value = float(part)
+            # 負の数は絶対値で計算する
+            if value < 0:
+                value = abs(value)
+                
+            ans = convert_frequency_period(value)
+            print(ans)
+    except ValueError:
+        pass
+
+def main():
+        # 標準入力から全行読み込む
+        try:
+            for line in sys.stdin:
+                process_line(line)
+        # Ctrl+C で終了した時の対応
+        except KeyboardInterrupt:
+            pass
+
+if __name__ == "__main__":
+    main()
