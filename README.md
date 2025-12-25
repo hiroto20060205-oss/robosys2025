@@ -10,6 +10,8 @@
 
 ## デモ
 
+https://github.com/user-attachments/assets/bc550b17-7801-44cd-bdeb-422b1231e2bf
+
 ## 使用方法
 
 ### リポジトリのクローンと実行準備
