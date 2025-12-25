@@ -46,7 +46,8 @@ def process_line(line):
             ans = convert_frequency_period(value)
             print(ans)
     except ValueError:
-        pass
+        #標準エラー出力へメッセージを出す
+        print(f"Warning: '{part}' is ignored (not a number)", file=sys.stderr)
 
 def main():
         # 標準入力から全行読み込む
