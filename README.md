@@ -61,9 +61,9 @@ echo 1000 0.001 | ./convert_frequency_period
 
 ## 参考文献
 - Qiita: 改行をスペースに置換して一行にする
-  https://qiita.com/VienosNotes/items/dba919899d393327e7cf  [参照日 2025/12/23]
+    - https://qiita.com/VienosNotes/items/dba919899d393327e7cf  [参照日 2025/12/23]
 - パイプ | について解説（ | と | xargs の違いも理解できる！）
-  https://daeudaeu.com/pipe-xargs/ [参照日 2025/12/24]
+    - https://daeudaeu.com/pipe-xargs/ [参照日 2025/12/24]
 
 ## ライセンス
 - © 2025 Hiroto Fujitake
